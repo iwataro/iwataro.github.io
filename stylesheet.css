@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ヘッダーCSS */
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #3F51B5;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.16);
+  position: fixed;
+  z-index: 10;
+}
+
+.header-image {
+  float: left;
+  padding-left: 140px;
+  padding-top: 31px;
+}
+
+.header-image img {
+  width: 200px;
+}
+
+.header-menu {
+  float: right;
+  padding-right: 140px;
+  padding-top: 40px;
+}
+
+.header-menu li {
+  display: inline;
+  padding-left: 30px;
+}
+
+.card {
+  padding-bottom: 4.5px;
+  border-bottom: 3px solid #E81919;
+  display: inline-block;
+}
+
+.header-menu a {
+  color: white;
+  font-size: 16px;
+}
+
+/* top-wrapperのCSS */
+.top-wrapper {
+  height: 700px;
+  /* background-image: url(image/mainvisual.png); */
+  background-image: url(../image/mainvisual.png);
+  background-size: cover;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-size: 68px;
+  padding-top: 249px;
+  color: #333
+}
+
+.top-wrapper h2 {
+  font-size: 38px;
+  padding-top: 12px;
+  color: #333;
+}
+
+.contact {
+  display: inline-block;
+  font-size: 38px;
+  color: white;
+  padding: 17px 81px;
+  margin-top: 82px;
+  background-color: #3F51B5;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* card wrapper CSS */
+.card-wrapper {
+
+  padding-bottom: 137px;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.card-wrapper h1 ,.news-wrapper h1 ,.price-wrapper h1{
+  padding-top: 68px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.bar {
+  font-size: 44.43px;
+  border-bottom: 5px solid #3F51B5;
+  display: inline-block;
+  margin-bottom: 68.57px;
+}
+
+.card-contents {
+  background-color: white;
+  width: calc(33.333% - 20px);
+  float: left;
+  padding: 16px;
+  margin: 0 30px 20px 0;
+}
+
+.card-contents:nth-child(3n) {
+  margin-right: 0;
+}
+
+.container {
+  padding: 0 140px;
+  background-color: #EFEFEF;
+}
+
+.card-contents h2 {
+  float: left;
+  padding-top: 26px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #6F7579;
+}
+
+.card-contents img {
+  width: 100%;
+}
+
+.card-contents p {
+float: left;
+font-size: 16px;
+color: #6F7579;
+}
+
+.clear {
+  clear: left;
+}
+
+
+/* news-wrapper CSS */
+.news-contents {
+  margin: 0 auto;
+  font-size: 16px;
+  width: 838px;
+}
+
+.news-contents a {
+  display: inline-block;
+  padding: 20px 0;
+  border-bottom: 1px solid #707070;
+  color: #333333;
+}
+
+.label {
+  color: white;
+  border-radius: 6px;
+  padding: 4.5px 18px;
+  font-weight: bold;
+}
+
+.label1 {
+  background-color: #666666;
+}
+
+.label2 {
+  background-color: #3F51B5;
+}
+
+.label3 {
+  background-color: #E81919;
+}
+
+.more {
+  display: block;
+  padding: 16px 0 29px 0;
+  text-align: center;
+  color: #E81919;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-contents a:last-child {
+  border-bottom: none;
+}
+
+.news-paragraph {
+  display: inline-block;
+  width: 576px;
+}
+
+/* price-wrapper CSS */
+.price-wrapper {
+  background-color: #EFEFEF;
+  height:664px;
+}
+
+.price-image{
+  /* padding-right: 122px; */
+  /* display: inline-block; */
+  float: left;
+}
+
+.price-image img {
+  width: 360px;
+}
+
+.price-table {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+}
+
+
+.red {
+  color: red;
+}
+
+.price-table {
+  height: 259px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+  
+
+table.price-table th,
+table.price-table td {
+  border: 1px solid #707070;
+  vertical-align: middle;
+}
+
+table.price-table {
+  border: 1px solid #707070;
+}
+
+.attention {
+  padding-top: 20px;
+  color: #333;
+}
+
+th {
+  background-color: #999999;
+  color: white;
+}
+
+.table-contents {
+  /* display: inline-block; */
+  float: right;
+  /* height: 300px; */
+}
+
+td {
+  text-align: right;
+  font-weight: lighter;
+}
+
+#contact {
+  border-bottom: 1px solid #333;
+}
+
+/*#########Google Map###########*/
+.access-wrapper {
+  padding-top: 69px;
+  position: relative
+}
+
+.access-wrapper h1 {
+  font-size: 60px;
+}
+
+.map{
+  /* padding-top: 105px; */
+  text-align: center;
+}
+
+.address {
+  position: absolute;
+  top: 730px;
+  left: 320px;
+}
+
+.google-map {
+  
+}
